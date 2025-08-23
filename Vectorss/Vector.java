@@ -158,6 +158,7 @@ public class Vector implements Iteratable<Double>
         {
             //||||||||| Just googled and converted the cross product math formula into code. I aint doin any manual maths 😤
             //||||||||| I always used the matrix method to find cross product in 1st year and I have no Idea how to implement that here and I didn't know this weird formula ever in my life
+            //|||||||| Nevermind I just realized that the formula I copied is just a simplified form of the matrix method, shit.. I should have done just a bit of manual maths 
             crossProduct.set_coordinates(0, (this.get_coordinates(1)*another.get_coordinates(2))-(this.get_coordinates(2)*another.get_coordinates(1)));
             crossProduct.set_coordinates(1, (this.get_coordinates(2)*another.get_coordinates(0))-(this.get_coordinates(0)*another.get_coordinates(2)));
             crossProduct.set_coordinates(2, (this.get_coordinates(0)*another.get_coordinates(1))-(this.get_coordinates(1)*another.get_coordinates(0)));   
@@ -170,12 +171,12 @@ public class Vector implements Iteratable<Double>
     {
         //|||||||||||||| Credit to https://www.geeksforgeeks.org/java/deep-shallow-lazy-copy-java-examples/ for this
 
-        Vector cloned = new Vector(); // Create a new Vector object
-        cloned.vector = new ArrayList<Double>(); // Initialize its internal list
+        Vector cloned = new Vector(); //|||||||||| Create a new Vector object
+        cloned.vector = new ArrayList<Double>(); //|||||||||| Initialize its internal list
 
         for (int i = 0; i < toClone.vec_dimen_count(); i++) 
         {
-            cloned.vector.add(toClone.get_coordinates(i)); // Copy each component
+            cloned.vector.add(toClone.get_coordinates(i)); //|||||||||| Copy each component
         }
         return cloned;
     }
@@ -197,5 +198,6 @@ public class Vector implements Iteratable<Double>
     }
     
 }
+
 
 
