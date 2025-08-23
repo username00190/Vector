@@ -164,7 +164,8 @@ public class Vector
         }
         return crossProduct;
     }
-
+    
+    @Ovddride
     public Vector clone(Vector toClone) //|||||||| Make deep copy of vector recieved in parameter. 
     {
         //|||||||||||||| Credit to https://www.geeksforgeeks.org/java/deep-shallow-lazy-copy-java-examples/ for this
@@ -189,5 +190,11 @@ public class Vector
         }
         return condition+")\t with size : "+this.vec_dimen_count();
     }
+    @Override//I don't completely get this method
+    public Iterator<Double> iterator() 
+    {
+        return vector.iterator();
+    }
     
 }
+
