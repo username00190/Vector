@@ -12,6 +12,7 @@
 - The `DotProduct()` returns the scalar product of two vectors.
 - The `CrossProcut()` returns the vector product of two vectors. As Cross Product is only possible when both vectors are 3D so here we throw a error if they are not and terminate the program.
 - The `clone()` creats a deep copy of Vector object which is. so that if we make changes to copy vector it doesn't effect the original and niether a change in the original after making the copy affects the copy.
-- Finally we implement a `toString()` for easily displaying vectors.
+- Then we implement a `toString()` for easily displaying vectors.
+- Finally we implement a `iterator()` method which implements a method from prebuilt `Iterator` class function that makes it possible for us to iterate through a vector using a for each loop
 
 - The `Main` class is used to make objects and run the operatoins of Vector class.
