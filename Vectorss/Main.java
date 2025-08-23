@@ -45,7 +45,7 @@ public class Main
         System.out.println("the Cross Product. " + vec_obj5.CrossProduct(vec_obj6).toString());
        //|||||| Iterating using a for each loop with help of prebuit iterator method which we make a method of in Vecto
       //|||||| I am still not clear how this works...
-        System.out.println("Now Iterating through the first vector ")
+        System.out.println("Now Iterating through the first vector ");
         for (double v : vec_obj1) 
         {
             System.out.print(v + " ");
@@ -53,4 +53,5 @@ public class Main
     }
 
 }
+
 
