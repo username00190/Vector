@@ -1,5 +1,5 @@
 import java.util.*;
-public class Vector 
+public class Vector implements Iteratable<Double>
 {
     private ArrayList<Double> vector = new ArrayList<Double>();
     private int temp=0;
@@ -197,4 +197,5 @@ public class Vector
     }
     
 }
+
 
